@@ -1,20 +1,15 @@
 {
-  "name": "todo-sample3",
-  "private": true,
+  "name": "todo-sample-3",
+  "version": "0.0.0",
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
-    }
+    "bootstrap-sass-official": "~3.3.1",
+    "jquery": "~2.1.0",
+    "backbone": "~1.1.0",
+    "requirejs": "~2.1.10",
+    "requirejs-text": "~2.0.10",
+    "lodash": "~2.4.1"
   },
   "devDependencies": {
-    "chai": "~3.4.2",
-    "mocha": "~2.3.4"
+    "jasmine-core": "jasmine#~2.4.1"
   }
 }
