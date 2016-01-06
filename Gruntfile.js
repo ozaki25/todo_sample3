@@ -30,6 +30,17 @@ module.exports = function (grunt) {
   };
 
   grunt.initConfig({
+    typescript: {
+      base: {
+        src: ['<%= yeoman.app %>/app/script/main.ts', '<%= yeoman.app %>/app/script/*/*.ts'],
+        options: {
+          target: 'es5',
+          sourceMap: true,
+          module: 'amd',
+          noImplicitAny:true
+        }
+      }
+    },
     yeoman: yeomanConfig,
     watch: {
       options: {
@@ -382,4 +393,5 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  grunt.loadNpmTasks('grunt-typescript');
 };

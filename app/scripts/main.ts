@@ -25,9 +25,7 @@ require.config({
 
 require([
   'jquery',
-  'backbone',
-  './routes/todo'
-], function ($, Backbone, Router) {
-  var router = new Router.Router();
+  'backbone'
+], function ($, Backbone) {
   Backbone.history.start();
 });
